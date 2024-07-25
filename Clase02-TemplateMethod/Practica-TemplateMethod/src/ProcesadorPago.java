@@ -2,10 +2,9 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public abstract class ProcesadorPago {
-    private String procesarPago(Tarjeta tarjeta, double monto){
-        LocalDate fecha = LocalDate.now();
+    public String procesarPago(Tarjeta tarjeta, double monto, LocalDate fecha){
         // Validar fecha de expiración de tarjeta
-        if (!validarFecha(tarjeta, fecha)){
+        if (validarFecha(tarjeta, fecha)){
             System.out.println("Tarjeta con fecha válida");
             // Autorizar tarjeta
             if (autorizar(tarjeta)){
