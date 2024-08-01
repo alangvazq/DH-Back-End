@@ -1,0 +1,26 @@
+[2024-08-0116:26:20] [ INFO ] [Tigre:14] Tigre está corriendo
+[2024-08-0116:28:14] [ INFO ] [Tigre:14] Tigre está corriendo
+[2024-08-0116:28:14] [ INFO ] [Leon:17] Tigre está corriendo
+[2024-08-0116:31:43] [ INFO ] [Tigre:14] El TigreTigre está corriendo
+[2024-08-0116:31:43] [ INFO ] [Leon:17] El Leónleon está corriendo
+[2024-08-0116:31:56] [ INFO ] [Tigre:14] El Tigre Tigre está corriendo
+[2024-08-0116:31:56] [ INFO ] [Leon:17] El Leónleon está corriendo
+[2024-08-0116:32:53] [ INFO ] [Leon:17] El León Simba está corriendo
+[2024-08-0116:32:53] [ INFO ] [Leon:17] El León Bom está corriendo
+[2024-08-0116:33:15] [ INFO ] [Leon:17] El León Simba está corriendo
+[2024-08-0116:33:15] [ INFO ] [Leon:17] El León Bom está corriendo
+[2024-08-0116:33:37] [ INFO ] [Leon:17] El León Simba está corriendo
+[2024-08-0116:33:37] [ INFO ] [Leon:17] El León Bom está corriendo
+[2024-08-0116:33:37] [ ERROR] [Leon:24] La edad del León Bomes incorrecta
+[2024-08-0116:34:47] [ INFO ] [Leon:17] El León Simba está corriendo
+[2024-08-0116:34:47] [ INFO ] [Leon:17] El León Bom está corriendo
+[2024-08-0116:34:47] [ ERROR] [Leon:24] La edad del León Bom es incorrecta
+[2024-08-0116:40:41] [ INFO ] [Leon:17] El León Simba está corriendo
+[2024-08-0116:40:41] [ INFO ] [Leon:17] El León Bom está corriendo
+[2024-08-0116:40:41] [ ERROR] [Leon:24] La edad del León Bom es incorrecta
+java.lang.Exception: La edad no puede ser negativa
+	at Leon.esMenorA10(Leon.java:32)
+	at Leon.esMayorA10(Leon.java:22)
+	at Main.main(Main.java:11)
+[2024-08-0116:40:41] [ INFO ] [Tigre:14] El Tigre Tigre está corriendo
+[2024-08-0116:40:41] [ INFO ] [Tigre:14] El Tigre Tigre está corriendo
