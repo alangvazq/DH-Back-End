@@ -1,0 +1,19 @@
+[2024-08-0114:18:12] [ INFO ] [Calculadora:28] Empezamos la división: 1/0
+[2024-08-0114:18:12] [ ERROR] [Calculadora:33] Ocurrio un error al dividir: 
+java.lang.ArithmeticException: / by zero
+	at Calculadora.division(Calculadora.java:31)
+	at Test.main(Test.java:10)
+[2024-08-0114:19:10] [ INFO ] [Calculadora:28] Empezamos la división: 1/0
+[2024-08-0114:19:10] [ ERROR] [Calculadora:33] Ocurrio un error al dividir: 
+java.lang.ArithmeticException: / by zero
+	at Calculadora.division(Calculadora.java:31)
+	at Test.main(Test.java:10)
+[2024-08-0114:19:10] [ INFO ] [Calculadora:28] Empezamos la división: 8/4
+[2024-08-0114:19:10] [ DEBUG] [Calculadora:36] Se dividio: 8/4
+[2024-08-0114:19:55] [ INFO ] [Calculadora:28] Empezamos la división: 1/0
+[2024-08-0114:19:55] [ ERROR] [Calculadora:33] Ocurrio un error al dividir: 
+java.lang.ArithmeticException: / by zero
+	at Calculadora.division(Calculadora.java:31)
+	at Test.main(Test.java:10)
+[2024-08-0114:19:55] [ INFO ] [Calculadora:28] Empezamos la división: 8/4
+[2024-08-0114:19:55] [ DEBUG] [Calculadora:36] Se dividio: 8/4
