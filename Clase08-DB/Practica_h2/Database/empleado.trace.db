@@ -1,0 +1,51 @@
+2024-08-01 23:44:52.390512-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "12 (EMPLEADO: ""FECHA"" DATE)"; SQL statement:
+INSERT INTO EMPLEADO VALUES(1, 'Juan', 'Perez', 20, 12) [22018-230]
+2024-08-01 23:45:49.781288-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Perez" [22018-230]
+2024-08-01 23:46:32.240958-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO EMPLEADO VALUES(1, 'Juan', 20, '2023-12-01'); [21002-230]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.command.dml.Insert.doPrepare(Insert.java:294)
+	at org.h2.command.dml.DataChangeStatement.prepare(DataChangeStatement.java:37)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:644)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:54)
+	at org.h2.command.CommandList.update(CommandList.java:67)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:59)
+	at org.h2.command.CommandList.update(CommandList.java:67)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at Empleado.main(Empleado.java:17)
+2024-08-01 23:47:10.676950-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO EMPLEADO VALUES(1, 'Juan', 20, '2023-12-01'); [21002-230]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.command.dml.Insert.doPrepare(Insert.java:294)
+	at org.h2.command.dml.DataChangeStatement.prepare(DataChangeStatement.java:37)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:644)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:54)
+	at org.h2.command.CommandList.update(CommandList.java:67)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:59)
+	at org.h2.command.CommandList.update(CommandList.java:67)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at Empleado.main(Empleado.java:17)
