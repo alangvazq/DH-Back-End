@@ -1,0 +1,24 @@
+2024-08-01 20:47:02.007309-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE FIGURAS(ID INT PRIMARY KEY, NAME VARCHAR(255), COLOR VARCHAR(255))[*]INSERT INTO FIGURAS VALUES(1, 'Círculo', 'Rojo')INSERT INTO FIGURAS VALUES(1, 'Círculo', 'Verde')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Amarillo')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Blanco')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Azul')"; SQL statement:
+CREATE TABLE FIGURAS(ID INT PRIMARY KEY, NAME VARCHAR(255), COLOR VARCHAR(255))INSERT INTO FIGURAS VALUES(1, 'Círculo', 'Rojo')INSERT INTO FIGURAS VALUES(1, 'Círculo', 'Verde')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Amarillo')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Blanco')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Azul') [42000-230]
+2024-08-01 20:47:53.838325-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE FIGURAS(ID INT PRIMARY KEY, NAME VARCHAR(255), COLOR VARCHAR(255))[*]INSERT INTO FIGURAS VALUES(1, 'Círculo', 'Rojo')INSERT INTO FIGURAS VALUES(1, 'Círculo', 'Verde')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Amarillo')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Blanco')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Azul')"; SQL statement:
+CREATE TABLE FIGURAS(ID INT PRIMARY KEY, NAME VARCHAR(255), COLOR VARCHAR(255))INSERT INTO FIGURAS VALUES(1, 'Círculo', 'Rojo')INSERT INTO FIGURAS VALUES(1, 'Círculo', 'Verde')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Amarillo')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Blanco')INSERT INTO FIGURAS VALUES(1, 'Cuadrado', 'Azul') [42000-230]
+2024-08-01 20:54:20.510070-06:00 database: wrong user or password; user: "ROOT"
+org.h2.message.DbException: Wrong user name or password [28000-230]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at Figuras.main(Figuras.java:9)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-230]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 12 more
