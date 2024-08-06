@@ -1,0 +1,8 @@
+
+[2024-08-0119:35:26] [ INFO ] [ListaEnteros:15] La longitud de la lista es mayor a 5
+[2024-08-0119:35:26] [ INFO ] [ListaEnteros:19] La longitud de la lista es mayor a 10
+[2024-08-0119:35:26] [ INFO ] [ListaEnteros:27] El promedio es: 6
+[2024-08-0119:35:26] [ ERROR] [Main:17] La lista es igual a cero
+java.lang.Exception: Empty list
+	at ListaEnteros.calcular(ListaEnteros.java:11)
+	at Main.main(Main.java:15)

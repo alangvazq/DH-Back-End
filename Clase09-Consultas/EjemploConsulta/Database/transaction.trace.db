@@ -1,0 +1,12 @@
+2024-08-06 11:08:14.168394-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE [*]TABLA USUARIO;( ID INT PRIMARY KEY, NOMBRE varchar(100) NOT NULL, EMAIL varchar(100) NOT NULL, SUELDO numeric(15, 2) NOT NULL)"; expected "OR REPLACE, FORCE, VIEW, MATERIALIZED, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL TEMPORARY, GLOBAL TEMPORARY, TEMPORARY, TABLE, SYNONYM, UNIQUE, SPATIAL, INDEX"; SQL statement:
+CREATE TABLA USUARIO;( ID INT PRIMARY KEY, NOMBRE varchar(100) NOT NULL, EMAIL varchar(100) NOT NULL, SUELDO numeric(15, 2) NOT NULL) [42001-230]
+2024-08-06 11:10:59.726222-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "( [*]ID INT PRIMARY KEY, NOMBRE varchar(100) NOT NULL, EMAIL varchar(100) NOT NULL, SUELDO numeric(15, 2) NOT NULL)"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+( ID INT PRIMARY KEY, NOMBRE varchar(100) NOT NULL, EMAIL varchar(100) NOT NULL, SUELDO numeric(15, 2) NOT NULL) [42001-230]
+2024-08-06 11:15:14.288343-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "( [*]ID INT PRIMARY KEY, NOMBRE varchar(100) NOT NULL, EMAIL varchar(100) NOT NULL, SUELDO numeric(15, 2) NOT NULL);"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+( ID INT PRIMARY KEY, NOMBRE varchar(100) NOT NULL, EMAIL varchar(100) NOT NULL, SUELDO numeric(15, 2) NOT NULL); [42001-230]
+2024-08-06 11:15:27.315971-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "( [*]ID INT PRIMARY KEY, NOMBRE varchar(100) NOT NULL, EMAIL varchar(100) NOT NULL, SUELDO numeric(15, 2) NOT NULL)"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+( ID INT PRIMARY KEY, NOMBRE varchar(100) NOT NULL, EMAIL varchar(100) NOT NULL, SUELDO numeric(15, 2) NOT NULL) [42001-230]
