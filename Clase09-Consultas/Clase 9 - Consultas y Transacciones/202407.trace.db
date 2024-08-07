@@ -1,0 +1,6 @@
+2024-08-06 19:30:31.108258-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "García" [22018-230]
+2024-08-06 19:32:03.437863-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-230]
+2024-08-06 19:33:02.627426-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-230]
