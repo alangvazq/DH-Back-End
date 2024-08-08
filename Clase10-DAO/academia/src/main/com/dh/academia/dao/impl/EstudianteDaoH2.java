@@ -8,17 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EstudianteDaoH2 implements IDao<Estudiante> {
-
-
     private final static String DB_JDBC_DRIVER = "org.h2.Driver";
     private final static String DB_URL = "jdbc:h2:~/prueba";
-    private final static String DB_USER ="sa";
+    private final static String DB_USER = "sa";
     private final static String DB_PASSWORD = "";
 
     public EstudianteDaoH2() {
     }
-
-
 
     @Override
     public Estudiante guardar(Estudiante estudiante) {
@@ -33,7 +29,7 @@ public class EstudianteDaoH2 implements IDao<Estudiante> {
 
             //2 Crear una sentencia
             preparedStatement = connection.prepareStatement("INSERT INTO estudiantes VALUES(?,?,?)");
-            preparedStatement.setLong(1,estudiante.getId());
+            preparedStatement.setLong(1, estudiante.getId());
             preparedStatement.setString(2, estudiante.getNombre());
             preparedStatement.setString(3, estudiante.getApellido());
 
@@ -57,7 +53,7 @@ public class EstudianteDaoH2 implements IDao<Estudiante> {
 
             //2 Crear una sentencia
             preparedStatement = connection.prepareStatement("DELETE FROM estudiantes where id = ?");
-            preparedStatement.setLong(1,id);
+            preparedStatement.setLong(1, id);
 
             //3 Ejecutar una sentencia SQL
             preparedStatement.executeUpdate();
@@ -81,7 +77,7 @@ public class EstudianteDaoH2 implements IDao<Estudiante> {
 
             //2 Crear una sentencia
             preparedStatement = connection.prepareStatement("SELECT id,nombre,apellido FROM estudiantes where id = ?");
-            preparedStatement.setLong(1,id);
+            preparedStatement.setLong(1, id);
 
             //3 Ejecutar una sentencia SQL
             ResultSet result = preparedStatement.executeQuery();
@@ -134,7 +130,4 @@ public class EstudianteDaoH2 implements IDao<Estudiante> {
 
         return estudiantes;
     }
-
-
-
 }
