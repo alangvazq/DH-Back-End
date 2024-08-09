@@ -130,4 +130,26 @@ public class EstudianteDaoH2 implements IDao<Estudiante> {
 
         return estudiantes;
     }
+
+    public Estudiante actualizar(Estudiante estudiante){
+        Connection connection = null;
+
+        try {
+            Class.forName(DB_JDBC_DRIVER);
+            connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE ESTUDIANTES SET NOMBRE = ?, APELLIDO = ? WHERE ID = ?");
+            preparedStatement.setString(1, estudiante.getNombre());
+            preparedStatement.setString(2, estudiante.getApellido());
+            preparedStatement.setLong(3, estudiante.getId());
+
+
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return null;
+    }
 }
