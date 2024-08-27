@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS nacimientos (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    dia INT NOT NULL,
+    mes INT NOT NULL,
+    anio INT NOT NULL,
+);
