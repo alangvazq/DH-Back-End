@@ -1,11 +1,21 @@
 package com.repaso.estudiantes.modelo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+
 import java.util.Set;
 
+@Entity
+@Table(name = "estudiantes")
 public class Estudiante {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
     private String apellido;
+
+    @OneToMany(mappedBy = "estudiante")
+    @JsonIgnore
     private Set<Cursada> cursadas;
 
     public Long getId() {

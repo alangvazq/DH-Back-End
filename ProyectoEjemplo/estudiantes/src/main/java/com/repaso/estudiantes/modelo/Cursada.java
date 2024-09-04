@@ -1,9 +1,21 @@
 package com.repaso.estudiantes.modelo;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "cursadas")
 public class Cursada {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @ManyToOne
+    @JoinColumn(name = "estudiante_id", nullable = false)
     private Estudiante estudiante;
-    private Cursada cursada;
+
+    @ManyToOne
+    @JoinColumn(name = "materia_id", nullable = false)
+    private Materia materia;
     private double nota;
 
     public Long getId() {
@@ -22,12 +34,12 @@ public class Cursada {
         this.estudiante = estudiante;
     }
 
-    public Cursada getCursada() {
-        return cursada;
+    public Materia getMateria() {
+        return materia;
     }
 
-    public void setCursada(Cursada cursada) {
-        this.cursada = cursada;
+    public void setMateria(Materia materia) {
+        this.materia = materia;
     }
 
     public double getNota() {
