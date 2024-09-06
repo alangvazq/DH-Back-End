@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface IMascotaRepository extends JpaRepository<Mascota, Long> {
 
-    List<Veterinaria> findByVeterinariaId(Long veterinariaId);
+    List<Mascota> findByVeterinariaId(Long veterinariaId);
 
     List<Mascota> findByTipo(String tipo);
 }

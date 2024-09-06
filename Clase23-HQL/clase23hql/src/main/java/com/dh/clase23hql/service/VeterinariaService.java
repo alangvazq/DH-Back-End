@@ -7,6 +7,8 @@ import com.dh.clase23hql.repository.IVeterianriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class VeterinariaService {
 
@@ -28,5 +30,11 @@ public class VeterinariaService {
         return mascotaRepository.save(mascota);
     }
 
+    public List<Mascota> obtenerMascotasDeVeterinaria(Long veterinariaId){
+        return mascotaRepository.findByVeterinariaId(veterinariaId);
+    }
 
+    public List<Mascota> obtenerPerros(){
+        return mascotaRepository.findByTipo("perro");
+    }
 }
