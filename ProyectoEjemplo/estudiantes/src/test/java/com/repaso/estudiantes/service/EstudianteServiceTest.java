@@ -15,13 +15,16 @@ class EstudianteServiceTest {
 
     @Test
     public void testCrearEstudiante(){
+        // Arrange
         EstudianteDTO estudianteDTO = new EstudianteDTO();
         estudianteDTO.setNombre("Juan");
         estudianteDTO.setApellido("Perez");
         estudianteService.crearEstudiante(estudianteDTO);
 
+        // Act
         EstudianteDTO estudianteDTO1 = estudianteService.leerEstudiante(1L);
 
+        // Assert
         assertTrue(estudianteDTO1 != null);
     }
 }
